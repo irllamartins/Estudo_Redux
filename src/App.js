@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import Media from "./components/Media"
+import Soma from "./components/Soma"
+import Sorteio from "./components/Sorteio"
 import './App.css';
-
+import Intervalo from "./components/Intervalo";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Exercicio React-Redux(simples)</h1>
+      <div className="linha">
+        <Intervalo title="Card 1" red> </Intervalo>
+      </div>
+      <div className="linha">
+      <Media title="Card 2" >  x </Media>
+      <Soma title="Card 3" >  x </Soma>
+      <Sorteio title="Card 4">  x </Sorteio>
+      </div>
     </div>
   );
 }
